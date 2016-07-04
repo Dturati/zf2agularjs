@@ -1,0 +1,19 @@
+<div ng-init="load()"></div>
+<a href="#/categorias/novo/">Novo</a>
+<h3>Categorias</h3>
+<table class="table">
+    <thead>
+    <th>Id</th>
+    <th>categoria</th>
+    <th>Ação</th>
+    </thead>
+    <tbody>
+    <tr ng-repeat="registro in registros ">
+        <td>{{registro.id}}</td>
+        <td>{{registro.nome}}</td>
+        <td>
+            <a href="#/categorias/editar/{{registro.id}}">Editar</a>
+        </td>
+    </tr>
+    </tbody>
+</table>
